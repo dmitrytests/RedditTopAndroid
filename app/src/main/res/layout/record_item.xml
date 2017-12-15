@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+    <ImageView
+        android:id="@+id/record_thumb_iv"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:layout_constraintEnd_toStartOf="@+id/record_title_tv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/record_title_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/record_thumb_iv"
+        app:layout_constraintTop_toTopOf="@+id/record_thumb_iv"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="10dp"
+        tools:text="Hello world!" />
+    <TextView
+        android:id="@+id/record_submission_time_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        tools:text="submitted 4 hours ago"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/record_title_tv"
+        app:layout_constraintStart_toEndOf="@+id/record_thumb_iv"
+        />
+    <TextView
+        android:id="@+id/record_author_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        tools:text="by Noname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/record_submission_time_tv"
+        app:layout_constraintStart_toEndOf="@+id/record_thumb_iv"
+         />
+    <TextView
+        android:id="@+id/record_comments_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        tools:text="100 comments"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/record_author_tv"
+        app:layout_constraintStart_toEndOf="@+id/record_thumb_iv"
+        />
+
+
+</android.support.constraint.ConstraintLayout>

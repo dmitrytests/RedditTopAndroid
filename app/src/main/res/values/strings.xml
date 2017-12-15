@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Reddit</string>
+    <string name="base_api_url">https://www.reddit.com</string>
+
+    <string name="save_btn_caption">Save</string>
+    <string name="submitted_text_pattern">submitted %s ago</string>
+    <string name="author_text_pattern">by %s</string>
+    <string name="coments_text_pattern">%d comments</string>
+    <string name="image_loading_error_pattern">Can\'t load: %s</string>
+    <string name="permissions_required_message">App will need Access storage permission for saving image</string>
+
+</resources>
